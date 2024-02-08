@@ -1,6 +1,6 @@
 Name:           mvfst
 Version:        2023.10.16.00
-Release:        %autorelease
+Release:        %autorelease -e rv64
 Summary:        An implementation of the QUIC transport protocol
 
 License:        MIT
@@ -8,7 +8,7 @@ URL:            https://github.com/facebook/mvfst
 Source:         %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 
 # same as the rest of the Folly stack
-ExclusiveArch:  x86_64 aarch64 ppc64le
+ExclusiveArch:  x86_64 aarch64 ppc64le riscv64
 
 BuildRequires:  cmake
 BuildRequires:  gcc-c++
